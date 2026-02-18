@@ -43,7 +43,7 @@ export default function Home() {
                 Professional IT Support & Computer Solutions
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Expert technical support for businesses and individuals. From repairs to network setup, we keep your technology running smoothly.
+                บริการให้คำปรึกษาด้านเทคนิคจากผู้เชี่ยวชาญสำหรับธุรกิจและบุคคลทั่วไป ตั้งแต่การซ่อมแซมไปจนถึงการติดตั้งเครือข่าย เราช่วยให้เทคโนโลยีของคุณทำงานได้อย่างราบรื่น
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link

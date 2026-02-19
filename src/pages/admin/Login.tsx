@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Lock, Monitor } from 'lucide-react';
+import { useNavigate, Link } from 'react-router-dom';
+import { Lock, Monitor, Home } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
 export default function AdminLogin() {
@@ -27,7 +27,14 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center px-4 relative">
+      <Link
+        to="/"
+        className="absolute top-6 left-6 bg-white hover:bg-gray-100 text-blue-900 px-4 py-2 rounded-lg font-semibold flex items-center space-x-2 transition-colors"
+      >
+        <Home className="h-5 w-5" />
+        <span>Back to Home</span>
+      </Link>
       <div className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md">
         <div className="text-center mb-8">
           <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
